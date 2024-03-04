@@ -6,5 +6,5 @@ Alarm app for PSP
 2. now clone using "git clone https://github.com/vicenteicc2008/alarm-psp.git"
 3. compile using make -f MakeFile
 
-## credits
+## Credits
 danssmnt for Digital-Clock-PSP
