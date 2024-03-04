@@ -1,0 +1,17 @@
+TARGET = hello_world
+OBJS = main.o callback.o glib2d.o
+INCDIR =
+CFLAGS = -G0 -Wall -O2 -fshort-wchar -fno-pic -mno-check-zero-division
+CXXFLAGS = $(CFLAGS) -fno-exceptions -fno-rtti
+ASFLAGS = $(CFLAGS)
+LIBDIR =
+LDFLAGS =
+LIBS = -lpng -ljpeg -lz -lpspgu -lm -lpspvram -lpspgum
+BUILD_PRX = 0
+PSP_FW_VERSION = 660
+EXTRA_TARGETS = EBOOT.PBP
+PSP_EBOOT_TITLE = Hello World
+PSPSDK = $(shell psp-config --pspsdk-path)
+
+include $(PSPSDK)/lib/build.mak
+
